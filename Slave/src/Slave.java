@@ -44,7 +44,7 @@ public class Slave {
 							DataOutputStream out = new DataOutputStream(baos);
 							out.writeLong(currentTime() - masterTime);
 
-							s.send(new DatagramPacket(baos.toByteArray(), 0, 8, message.getAddress(), 5555));
+							s.send(new DatagramPacket(baos.toByteArray(), 0, 8, message.getAddress(), 5553));
 							break;
 
 						case 1:
