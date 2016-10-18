@@ -17,7 +17,7 @@ import java.net.MulticastSocket;
  *
  */
 public class Slave {
-	private static long timeOffset = 0;
+	private static volatile long timeOffset = 0;
 
 	/**
 	 * Obtient l'heure actuelle, correspond à l'heure du system additionnée au décalage enregistré
